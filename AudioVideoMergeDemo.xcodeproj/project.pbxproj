@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		117A375721AE741900F1F676 /* bbb.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 117A375521AE741900F1F676 /* bbb.m4r */; };
+		117A375821AE741900F1F676 /* aaa.m4r in Resources */ = {isa = PBXBuildFile; fileRef = 117A375621AE741900F1F676 /* aaa.m4r */; };
+		117A375B21AE79E500F1F676 /* ccc.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 117A375A21AE79E500F1F676 /* ccc.mp4 */; };
 		11FA582421AE670000D22BE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FA582321AE670000D22BE8 /* AppDelegate.m */; };
 		11FA582721AE670000D22BE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FA582621AE670000D22BE8 /* ViewController.m */; };
 		11FA582A21AE670000D22BE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FA582821AE670000D22BE8 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		117A375521AE741900F1F676 /* bbb.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = bbb.m4r; sourceTree = "<group>"; };
+		117A375621AE741900F1F676 /* aaa.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = aaa.m4r; sourceTree = "<group>"; };
+		117A375A21AE79E500F1F676 /* ccc.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccc.mp4; sourceTree = "<group>"; };
 		11FA581F21AE670000D22BE8 /* AudioVideoMergeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioVideoMergeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FA582221AE670000D22BE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11FA582321AE670000D22BE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		11FA582121AE670000D22BE8 /* AudioVideoMergeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				11FA585821AE691F00D22BE8 /* Resource */,
 				11FA582221AE670000D22BE8 /* AppDelegate.h */,
 				11FA582321AE670000D22BE8 /* AppDelegate.m */,
 				11FA582521AE670000D22BE8 /* ViewController.h */,
@@ -130,6 +137,16 @@
 				11FA584821AE670100D22BE8 /* Info.plist */,
 			);
 			path = AudioVideoMergeDemoUITests;
+			sourceTree = "<group>";
+		};
+		11FA585821AE691F00D22BE8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				117A375A21AE79E500F1F676 /* ccc.mp4 */,
+				117A375621AE741900F1F676 /* aaa.m4r */,
+				117A375521AE741900F1F676 /* bbb.m4r */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +252,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117A375721AE741900F1F676 /* bbb.m4r in Resources */,
 				11FA582F21AE670100D22BE8 /* LaunchScreen.storyboard in Resources */,
 				11FA582C21AE670100D22BE8 /* Assets.xcassets in Resources */,
+				117A375B21AE79E500F1F676 /* ccc.mp4 in Resources */,
 				11FA582A21AE670000D22BE8 /* Main.storyboard in Resources */,
+				117A375821AE741900F1F676 /* aaa.m4r in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

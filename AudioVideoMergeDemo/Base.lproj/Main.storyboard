@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,102 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDl-aA-cip">
+                                <rect key="frame" x="20" y="40" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.99262219669999996" green="0.57012104990000001" blue="0.32397079470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2de-K6-JV3"/>
+                                </constraints>
+                                <state key="normal" title="播放 音频 A"/>
+                                <connections>
+                                    <action selector="playAAAAA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yrO-eP-hNF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnd-L6-sSF">
+                                <rect key="frame" x="20" y="100" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.99262219669999996" green="0.57012104990000001" blue="0.32397079470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Tpp-2w-AXg"/>
+                                </constraints>
+                                <state key="normal" title="播放 音频 B"/>
+                                <connections>
+                                    <action selector="playBBBBB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RlE-lc-yk5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXj-UR-fBJ">
+                                <rect key="frame" x="20" y="160" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.99262219669999996" green="0.57012104990000001" blue="0.32397079470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lbp-Br-VWb"/>
+                                </constraints>
+                                <state key="normal" title="播放短视频"/>
+                                <connections>
+                                    <action selector="playShortVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pFB-nt-aQ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiE-Yz-cDj">
+                                <rect key="frame" x="20" y="220" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.99262219669999996" green="0.57012104990000001" blue="0.32397079470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rWn-cp-Xoi"/>
+                                </constraints>
+                                <state key="normal" title="播放 音频 A 和 音频 B 的合成音频"/>
+                                <connections>
+                                    <action selector="playAAAAAMergerBBBBB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wwy-sg-k33"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2o-6e-sFO">
+                                <rect key="frame" x="20" y="280" width="335" height="40"/>
+                                <color key="backgroundColor" red="0.99262219669999996" green="0.57012104990000001" blue="0.32397079470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T4C-yZ-H5r"/>
+                                </constraints>
+                                <state key="normal" title="播放短视频+音频 A 的合成视频"/>
+                                <connections>
+                                    <action selector="playShortVideoMergeAAAAA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HDI-Qm-R7t"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-7i-JAE">
+                                <rect key="frame" x="0.0" y="330" width="375" height="337"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gDl-aA-cip" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0Pa-4q-rfa"/>
+                            <constraint firstItem="fiE-Yz-cDj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1dh-rn-SaO"/>
+                            <constraint firstItem="fiE-Yz-cDj" firstAttribute="top" secondItem="EXj-UR-fBJ" secondAttribute="bottom" constant="20" id="2a6-fj-QS8"/>
+                            <constraint firstItem="gDl-aA-cip" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AHV-NP-hZ8"/>
+                            <constraint firstItem="ci2-7i-JAE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="DdI-bX-LPa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hnd-L6-sSF" secondAttribute="trailing" constant="20" id="JZe-RY-tmH"/>
+                            <constraint firstItem="p2o-6e-sFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kth-6f-vuC"/>
+                            <constraint firstItem="ci2-7i-JAE" firstAttribute="top" secondItem="p2o-6e-sFO" secondAttribute="bottom" constant="10" id="TsK-vU-k19"/>
+                            <constraint firstItem="ci2-7i-JAE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XE2-ux-muu"/>
+                            <constraint firstItem="EXj-UR-fBJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Y0B-oN-Otn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EXj-UR-fBJ" secondAttribute="trailing" constant="20" id="ZBa-ag-f9Y"/>
+                            <constraint firstItem="hnd-L6-sSF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aXn-MR-unC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fiE-Yz-cDj" secondAttribute="trailing" constant="20" id="gtq-V5-LK4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gDl-aA-cip" secondAttribute="trailing" constant="20" id="p9S-9k-Mg1"/>
+                            <constraint firstItem="p2o-6e-sFO" firstAttribute="top" secondItem="fiE-Yz-cDj" secondAttribute="bottom" constant="20" id="vIZ-8y-JZh"/>
+                            <constraint firstItem="EXj-UR-fBJ" firstAttribute="top" secondItem="hnd-L6-sSF" secondAttribute="bottom" constant="20" id="wOQ-Wl-0pu"/>
+                            <constraint firstItem="hnd-L6-sSF" firstAttribute="top" secondItem="gDl-aA-cip" secondAttribute="bottom" constant="20" id="wc1-gA-Ebj"/>
+                            <constraint firstItem="ci2-7i-JAE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wvc-X0-XEy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p2o-6e-sFO" secondAttribute="trailing" constant="20" id="y3F-1l-0kr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="playerView" destination="ci2-7i-JAE" id="JtN-tC-Fai"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
